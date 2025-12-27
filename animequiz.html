@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anime Industry Quiz</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  padding: 20px;
+}
+h1 { text-align: center; }
+.question { margin-bottom: 20px; }
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.result {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>🎌 Anime Industry Quiz</h1>
+
+<form id="quiz">
+
+<div class="question">
+1. What does the word “anime” come from?<br>
+<input type="radio" name="q1" value="0"> Cartoon<br>
+<input type="radio" name="q1" value="1"> Animation<br>
+<input type="radio" name="q1" value="0"> Manga<br>
+<input type="radio" name="q1" value="0"> Drawing
+</div>
+
+<div class="question">
+2. Which studio made *Spirited Away*?<br>
+<input type="radio" name="q2" value="0"> Toei Animation<br>
+<input type="radio" name="q2" value="0"> Madhouse<br>
+<input type="radio" name="q2" value="1"> Studio Ghibli<br>
+<input type="radio" name="q2" value="0"> MAPPA
+</div>
+
+<div class="question">
+3. How many anime seasons are there per year?<br>
+<input type="radio" name="q3" value="0"> 2<br>
+<input type="radio" name="q3" value="0"> 3<br>
+<input type="radio" name="q3" value="1"> 4<br>
+<input type="radio" name="q3" value="0"> 6
+</div>
+
+<div class="question">
+4. Typical anime episode length?<br>
+<input type="radio" name="q4" value="0"> 12 min<br>
+<input type="radio" name="q4" value="0"> 18 min<br>
+<input type="radio" name="q4" value="1"> 23–24 min<br>
+<input type="radio" name="q4" value="0"> 30 min
+</div>
+
+<div class="question">
+5. Which is NOT an anime genre?<br>
+<input type="radio" name="q5" value="0"> Shōnen<br>
+<input type="radio" name="q5" value="0"> Seinen<br>
+<input type="radio" name="q5" value="0"> Isekai<br>
+<input type="radio" name="q5" value="1"> Retro
+</div>
+
+<div class="question">
+6. What is a “cour”?<br>
+<input type="radio" name="q6" value="0"> Movie length<br>
+<input type="radio" name="q6" value="1"> 3-month broadcast block<br>
+<input type="radio" name="q6" value="0"> Manga volume<br>
+<input type="radio" name="q6" value="0"> Studio
+</div>
+
+<div class="question">
+7. Studio famous for *Jujutsu Kaisen*?<br>
+<input type="radio" name="q7" value="0"> Pierrot<br>
+<input type="radio" name="q7" value="1"> MAPPA<br>
+<input type="radio" name="q7" value="0"> CloverWorks<br>
+<input type="radio" name="q7" value="0"> A-1 Pictures
+</div>
+
+<div class="question">
+8. What usually comes first for anime adaptations?<br>
+<input type="radio" name="q8" value="1"> Manga / Light Novel<br>
+<input type="radio" name="q8" value="0"> Game<br>
+<input type="radio" name="q8" value="0"> Soundtrack<br>
+<input type="radio" name="q8" value="0"> Anime script
+</div>
+
+<div class="question">
+9. What does OVA stand for?<br>
+<input type="radio" name="q9" value="0"> Original Visual Anime<br>
+<input type="radio" name="q9" value="0"> Official Video Animation<br>
+<input type="radio" name="q9" value="1"> Original Video Animation<br>
+<input type="radio" name="q9" value="0"> Online Visual Anime
+</div>
+
+<div class="question">
+10. Who controls the creative vision?<br>
+<input type="radio" name="q10" value="0"> Voice Actor<br>
+<input type="radio" name="q10" value="0"> Animator<br>
+<input type="radio" name="q10" value="1"> Director<br>
+<input type="radio" name="q10" value="0"> Publisher
+</div>
+
+<div class="question">
+11. Why do many anime stop after one season?<br>
+<input type="radio" name="q11" value="0"> Animation quality<br>
+<input type="radio" name="q11" value="0"> Voice actors<br>
+<input type="radio" name="q11" value="1"> Poor sales<br>
+<input type="radio" name="q11" value="0"> Too many episodes
+</div>
+
+<div class="question">
+12. One of the oldest anime studios?<br>
+<input type="radio" name="q12" value="0"> Ufotable<br>
+<input type="radio" name="q12" value="1"> Toei Animation<br>
+<input type="radio" name="q12" value="0"> Kyoto Animation<br>
+<input type="radio" name="q12" value="0"> Trigger
+</div>
+
+<div class="question">
+13. What is “sakuga”?<br>
+<input type="radio" name="q13" value="0"> Background art<br>
+<input type="radio" name="q13" value="0"> Music<br>
+<input type="radio" name="q13" value="1"> High-quality animation cuts<br>
+<input type="radio" name="q13" value="0"> Character sheets
+</div>
+
+<div class="question">
+14. Biggest anime distributor worldwide?<br>
+<input type="radio" name="q14" value="0"> Netflix<br>
+<input type="radio" name="q14" value="1"> Crunchyroll<br>
+<input type="radio" name="q14" value="0"> Amazon Prime<br>
+<input type="radio" name="q14" value="0"> Disney+
+</div>
+
+<div class="question">
+15. Spring anime season months?<br>
+<input type="radio" name="q15" value="0"> Jan–Mar<br>
+<input type="radio" name="q15" value="0"> Feb–Apr<br>
+<input type="radio" name="q15" value="1"> Apr–Jun<br>
+<input type="radio" name="q15" value="0"> Mar–May
+</div>
+
+<button type="button" onclick="submitQuiz()">Submit</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+function submitQuiz() {
+  let score = 0;
+  const total = 15;
+  for (let i = 1; i <= total; i++) {
+    const q = document.querySelector(`input[name="q${i}"]:checked`);
+    if (q) score += Number(q.value);
+  }
+  document.getElementById("result").innerHTML =
+    `🔥 Your Score: ${score} / ${total}<br>
+     Share it: "I scored ${score}/${total} on the Anime Industry Quiz!"`;
+}
+</script>
+
+</body>
+</html>
